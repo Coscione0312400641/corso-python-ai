@@ -21,7 +21,7 @@ calcola la somma
 except:
     pass
 '''
-numeri_stringhe=["20","60","18","7","1","30","10"]
+numeri_stringhe=["20","uni","18","7","1","30","10"]
 def ricevi_stringhe(numeri_stringhe):
     for num in numeri_stringhe:
         if not isinstance(num, str):
@@ -29,7 +29,15 @@ def ricevi_stringhe(numeri_stringhe):
     return numeri_stringhe
 print(ricevi_stringhe(numeri_stringhe))
 def controllo(numeri_stringhe):
-    return [int(num) for num in numeri_stringhe]
+    interi = []
+    for num in numeri_stringhe:
+        try:
+            interi.append(int(num))
+        except ValueError:
+            print(f"Valore non valido ignorato: {num}")
+    return interi
+
+    #return [int(num) for num in numeri_stringhe]
 
 print(controllo(interi_corretti))
 da_sommare=[]
