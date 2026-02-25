@@ -7,10 +7,10 @@
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    print("Ciao sono il Main")
-
-    print("Secondo commit")
-
+numeri=[1,2,3,4]
+quadrati=[numero**2 for numero in numeri]
+#[trasformazione for elemento in elementi]
+print(quadrati)
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')

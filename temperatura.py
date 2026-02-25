@@ -7,3 +7,4 @@ def superiori_a_venti(temperature):
             massime.append(temperature[minima])
     print(massime)
 superiori_a_venti(temperature)
+
