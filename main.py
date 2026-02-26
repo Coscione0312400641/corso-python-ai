@@ -1,5 +1,37 @@
 # This is a sample Python script.
 import utils
+with open("data.txt","r") as f:
+    nomi=f.readlines()
+print(nomi)
+nomi_puliti=[]
+#nomi_puliti=[f.strip().title().replace("\n","")for r in f.readlines()]
+for n in nomi:
+    nome=n.strip()
+    nome=nome.title()
+    nome=nome.replace("\n","")
+    nomi_puliti.append(nome)
+print(nomi_puliti)
+with open("dati_puliti.txt","w") as f:
+    for nome in nomi_puliti:
+        f.write(nome+"\n")
+        #f.write("\n".join(nomi_puliti))
+#with open("data.txt","w") as f:
+#    f.write("Parole")
+#with open("data.txt","a") as f:
+#    f.write("Aggiungere")
+#for line in contenuto:
+#    print(line)
+#f=open("data.txt","r")
+#print(f.read())
+f.close()
+'''
+r->lettura
+w->scrittura e sovrascrittura
+a->append
+r+->lettura + scrittura
+
+apertura file->trasformazione -> nuovo file
+'''
 a=0
 b=1
 # Press Maiusc+F10 to execute it or replace it with your code.
