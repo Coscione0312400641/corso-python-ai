@@ -1,4 +1,7 @@
-Mario
-Luca
-Ciccio
-Giulia
+Nome,Eta,Citta
+Mario,30,Roma
+Luca,22,Napoli
+Ciccio,21,Ancona
+Francesca,19,Torino
+Anna,31,Firenze
+Vincenzo,34,Catanzaro

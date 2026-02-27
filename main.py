@@ -1,5 +1,9 @@
 # This is a sample Python script.
 import utils
+from classi.LLMRequest import LLMRequest
+
+request=LLMRequest("Di che colore è il cielo?")
+request._prompt="Prompt cambiato"
 with open("data.txt","r") as f:
     nomi=f.readlines()
 print(nomi)
