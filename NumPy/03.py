@@ -1,0 +1,56 @@
+import numpy as np
+x=5
+v=np.array([1,2,3,4,5])
+print(v.shape)
+m=np.array([
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+])
+print(m.shape)
+t=np.array([
+    [
+    [1,2],
+    [3,4],
+],
+    [
+        [5,6],
+     [7,8]
+     ]
+    ]
+)
+print(t.shape)
+
+a=np.array([1,2,3,4,5])
+b=10
+print(a+b)
+c=np.array([
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+    ]
+)
+media=np.mean(a,axis=0)
+norm=a-media
+print(norm)
+d=np.array([10,20,30])
+print(c+d)
+'''
+[1,2,3]+[10,10,10]
+6 elementi
+2,3
+3,2
+6,1
+1,6
+'''
+ #reshaping
+f=np.array([1,2,3,4,5,6])
+g=np.array([[1,2,3],[4,5,6]])
+h=f.reshape(6,-1)
+print(h)
+
+a=np.array([1,2,3,4,5,6,5,6,4,3,2,4,5,67,4,3,2,6,7,4,3])
+b=a[0:2].copy()
+b[0]=99
+print(b)
+print(a)
