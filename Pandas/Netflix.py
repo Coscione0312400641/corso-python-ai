@@ -47,4 +47,4 @@ def recommend_by_title(title: str, k: int = 10, same_genre: bool = False) -> pd.
     recs[recs[recs["title"]]!=title]
     return recs[["title","director", "genres", "descriptions"]].head(k)
 
-print(recommend_by_title("inception", k=5))
+print(recommend_by_title("The Hobbit", k=5))
